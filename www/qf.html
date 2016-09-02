@@ -1,0 +1,36 @@
+<div ng-controller="QfController">
+    <ons-toolbar>
+        <div class="left"><ons-back-button>返回</ons-back-button></div>
+        <div class="center">七佛灭罪真言 <span class="notification" style="margin-top:10px;">{{data.qf}}</span></div>
+    </ons-toolbar>
+    
+    <div style="text-align:center; margin-top:20px;">
+        <h3>七佛灭罪真言</h3>
+        
+        <p>离婆离婆帝<br>
+          lí pó lí pó dì<br>
+          求诃求诃帝<br>
+          qiú hē qiú hē dì<br>
+          陀罗尼帝<br>
+          tuó luó ní dì<br>
+          尼诃啰帝<br>
+          ní hē là dì<br>
+          
+          毗黎你帝<br>
+          pí lí nǐ dì<br>
+          
+          摩诃伽帝<br>
+          mó hē qié dì<br>
+          
+          真陵乾帝<br>
+          zhēn líng qián dì<br>
+          
+          莎婆诃<br>
+          suō pó hē<br>
+
+        <button class="button" ng-click="add()" ng-disabled="data.qf == 87">+ 1        
+        </button>   
+    </div>
+ 
+</div>
+

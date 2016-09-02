@@ -1,0 +1,140 @@
+<ons-page ng-controller="MainController">
+    <ons-toolbar>
+        <div class="left"><ons-back-button>返回</ons-back-button></div>
+        <div class="center">小房子</div>
+    </ons-toolbar>
+    <br>
+    
+  <ons-row align="center">
+    <ons-col  width="70%">
+      <ons-row align="center">
+        <ons-col style="text-align:center;">            
+          <img src="logo.jpg" alt="logo" style="margin-left:30px;width: 40px; height:40px;">              
+        </ons-col>
+        <ons-col>
+            x {{data.total}}
+        </ons-col>
+      </ons-row>
+    </ons-col>
+    <ons-col>
+        <button class="button button--outline" ng-click="clearTotal()">清零</button> 
+    </ons-col>
+  </ons-row> 
+  
+  <ul class="list list--inset" style="margin-top: 10px">    
+    <li class="list__item">        
+      <ons-row align="center">
+        <ons-col width="70%">
+            27 大悲咒 <span class="notification" style="margin-top:10px;">{{data.dbz}}</span>
+        </ons-col>
+        <ons-col>            
+            <div class="button-bar">
+              <div class="button-bar__item">
+                <button class="button-bar__button" ng-click="add('dbz')" ng-disabled="data.dbz == 27">
+                    <span class='ion-plus'></span>
+                </button>
+              </div>
+            
+              <div class="button-bar__item">
+                <button class="button-bar__button" ng-click="minus('dbz')" ng-disabled="data.dbz == 0">
+                    <span class='ion-minus'></span>
+                </button>
+              </div>
+            
+              <div class="button-bar__item">
+                <button class="button-bar__button" ng-click="dbz()">
+                    <span class="ion-chevron-right"></span>
+                </button>
+              </div>
+            </div>
+        </ons-col>
+      </ons-row>
+    </li>
+    <li class="list__item">
+      <ons-row align="center">
+        <ons-col width="70%">
+            49 心经 <span class="notification" style="margin-top:10px;">{{data.xj}}</span>
+        </ons-col>
+        <ons-col>            
+            <div class="button-bar">
+              <div class="button-bar__item">
+                <button class="button-bar__button" ng-click="add('xj')" ng-disabled="data.xj == 49">
+                    <span class='ion-plus'></span>
+                </button>
+              </div>
+            
+              <div class="button-bar__item">
+                <button class="button-bar__button" ng-click="minus('xj')" ng-disabled="data.xj == 0">
+                    <span class='ion-minus'></span>
+                </button>
+              </div>
+            
+              <div class="button-bar__item">
+                <button class="button-bar__button" ng-click="xj()">
+                    <span class="ion-chevron-right"></span>
+                </button>
+              </div>
+            </div>
+        </ons-col>
+      </ons-row>        
+    </li>
+    <li class="list__item">
+      <ons-row align="center">
+        <ons-col width="70%">
+            84 往生咒 <span class="notification" style="margin-top:10px;">{{data.wsz}}</span>
+        </ons-col>
+        <ons-col>            
+            <div class="button-bar">
+              <div class="button-bar__item">
+                <button class="button-bar__button" ng-click="add('wsz')" ng-disabled="data.wsz == 84">
+                    <span class='ion-plus'></span>
+                </button>
+              </div>
+            
+              <div class="button-bar__item">
+                <button class="button-bar__button" ng-click="minus('wsz')" ng-disabled="data.wsz == 0">
+                    <span class='ion-minus'></span>
+                </button>
+              </div>
+            
+              <div class="button-bar__item">
+                <button class="button-bar__button" ng-click="wsz()">
+                    <span class="ion-chevron-right"></span>
+                </button>
+              </div>
+            </div>
+        </ons-col>
+      </ons-row>        
+    </li>
+    <li class="list__item">
+      <ons-row align="center">
+        <ons-col width="70%">
+            87 七佛 <span class="notification" style="margin-top:10px;">{{data.qf}}</span>
+        </ons-col>
+        <ons-col>            
+            <div class="button-bar">
+              <div class="button-bar__item">
+                <button class="button-bar__button" ng-click="add('qf')" ng-disabled="data.qf == 87">
+                    <span class='ion-plus'></span>
+                </button>
+              </div>
+            
+              <div class="button-bar__item">
+                <button class="button-bar__button" ng-click="minus('qf')" ng-disabled="data.qf == 0">
+                    <span class='ion-minus'></span>
+                </button>
+              </div>
+            
+              <div class="button-bar__item">
+                <button class="button-bar__button" ng-click="qf()">
+                    <span class="ion-chevron-right"></span>
+                </button>
+              </div>
+            </div>
+        </ons-col>
+      </ons-row>        
+    </li>
+  </ul>
+  
+  
+</ons-page>
